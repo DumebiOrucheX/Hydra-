@@ -1,0 +1,58 @@
+body {
+    background: #302C42;
+    margin-top: 50px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   
+   .body-content {
+       padding: 0px;
+   }
+   
+   .services-section h2 {
+       color: red;
+       font-size: 36px;
+       text-align: left;
+       margin-left: 10%;
+       margin-bottom: 20px;
+   }
+   
+   .image-row {
+       display: flex;
+       justify-content: space-around;
+       margin-bottom: 40px;
+   }
+   
+   .service {
+       text-align: center;
+       width: 25%;
+   }
+   
+   .service img {
+       width: 80%;
+       height: 80%;
+       border-radius: 50%;
+       flex-shrink: 0;
+   }
+   
+   .service p {
+       margin-top: 10px;
+       font-size: 14px;
+       color: #c0b7e8;
+       font-weight: 800;
+   }
+   
+   @media (max-width: 768px) {
+       .image-row {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr); 
+           gap: 20px;
+           justify-items: center;
+       }
+   
+       .service {
+           width: 80%;
+       }
+   }
+   
