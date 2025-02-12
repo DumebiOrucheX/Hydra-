@@ -1,0 +1,130 @@
+.footer {
+    color: #c0b7e8;
+    background: #302C42;
+    padding: 40px;
+    margin-top: 90px;
+}
+
+.footer-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-hr {
+    border: 1px solid rgba(192, 183, 232, 0.33);
+    width: 100%;
+}
+
+.footer-logo {
+    width: 185px;
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.footer-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    gap: 20px;
+    position: relative;
+    align-items: flex-start;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    text-align: left;
+    position: relative;
+    gap: 10px;
+}
+
+.footer-column a {
+    font-weight: 600;
+    line-height: 19.5px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    font-size: 16px;
+
+}
+
+.footer-column:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.3rem;
+    height: 100%;
+    background-image: linear-gradient(179.87deg, #343045 0.47%, #343045 0.47%, #C0B7E8 35.21%, #8176AF 68.91%, #343045 99.5%);
+    z-index: 1;
+}
+
+.footer-column h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    color: #fff;
+}
+
+.footer-column4 .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.footer-column4 .footer-button {
+    background: linear-gradient(90deg, #8176af, #c0b7e8);
+    font-weight: 800;
+    color: #302C42;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+@media (max-width: 1110px) {
+    .footer-column:not(:last-child)::after {
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-column {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.footer-copyright {
+    width: 100%;
+    margin-top: 40px;
+    font-weight: 700;
+    line-height: 17.07px;
+    color: #fff;
+    background: #302C42;
+    padding: 10px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    letter-spacing: 0.13em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}

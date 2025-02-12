@@ -1,0 +1,137 @@
+.form-container {
+  background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+  padding: 30px;
+  border-radius: 80px;
+  width: 85%;
+  height: 908px;
+  margin: 0 auto;
+  color: white;
+  margin-top: 60px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.form-hr {
+    width: 414px; 
+    border: 1px solid rgba(192, 183, 232, 0.33);
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  height: 52px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 40px;
+  color: white;
+}
+
+form input::placeholder {
+  color: white;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 15px;
+  padding-left: 30px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+form textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 40px;
+  resize: vertical;
+}
+
+form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.85);
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 15px;
+  padding-left: 30px;
+}
+
+form .flex-fields {
+  display: flex;
+  margin: 0px 90px;
+}
+
+form .flex-fields input {
+  flex: 1;
+  margin-right: 10px;
+  border-radius: 9999px;
+}
+
+form .flex-fields input:last-child {
+  margin-right: 0;
+}
+
+form .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+form button {
+  background: linear-gradient(90deg, #8176af, #c0b7e8);
+  color: rgb(52, 48, 69);
+  width: 214px;
+  height: 48px;
+  font-weight: 700;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  border: none;
+}
+
+form button:hover {
+  background-color: #6a5b83;
+}
+
+@media (max-width: 1022px) {
+  .form-container {
+      width: 90%;
+  }
+
+  .flex-fields {
+      flex-direction: column;
+  }
+
+  .flex-fields input {
+      margin-right: 0;
+  }
+}
+
+@media (max-width: 690px) {
+  .form-container {
+      height: 1080px;
+  }
+}
+
+@media (max-width: 355px) {
+  .form-container {
+      height: 1180px;
+  }
+}

@@ -1,0 +1,112 @@
+.tech-section {
+    position: relative;
+    background: url('../assets/images/tech.png') no-repeat center center;
+    background-color: rgb(48, 44, 66);
+    background-size: cover;
+    height: 303px;
+    max-width: 100%;
+    border-radius: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 80px;
+    margin-left: 84px;
+    margin-right: 84px;
+    color: white;
+    text-align: center;
+    flex-shrink: 0;
+    min-height: 200px;
+}
+
+.tech-section2 {
+    position: relative;
+    background: url('../assets/images/tech2.png') no-repeat center center;
+    background-color: rgb(48, 44, 66);
+    background-size: cover;
+    max-width: 100%;
+    height: 310px;
+    margin-left: 84px;
+    margin-right: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.tech-scroll-btn {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+    border: none;
+    color: #302c42;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 0 30px 20px rgba(0, 0, 0, 1); 
+}
+
+.tech-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+    z-index: 1;
+}
+
+.tech-content {
+    max-width: 800px;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.tech-heading1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.tech-heading2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .tech-heading1 {
+        font-size: 20px;
+    }
+
+    .tech-heading2 {
+        font-size: 14px;
+    }
+
+    .promo-paragraph {
+        font-size: 16px;
+    }
+
+    .tech-section {
+        background-size: contain;
+        margin: 20px;
+        height: 160px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 620px) {
+    .tech-section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

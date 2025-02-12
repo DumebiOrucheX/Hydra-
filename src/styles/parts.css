@@ -1,0 +1,151 @@
+.parts-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.scrollable-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.parts-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.part-item {
+    position: relative;
+    border-radius: 40px;
+    padding: 20px;
+    height: 470px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.part-item2 {
+    position: relative;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.part-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;  
+    text-align: center;
+    margin-top: 50px;
+}
+
+.part-p {
+    margin: 10px 0;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.part-price {
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 35px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18.63px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.part-hr {
+    width: 154px; 
+    border: 1px solid rgba(192, 183, 232, 0.33);
+  }
+
+.part-image {
+    width: 190px;
+    height: 190px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.part-image2 {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+#part-btn {
+    background: linear-gradient(90deg, #8176af, #c0b7e8);
+    color: rgb(52, 48, 69);
+    width: 154px;
+    height: 48px;
+    border-radius: 40px;
+    margin-top: 30px;
+    border: none;
+}
+
+#part-btn:hover {
+    background: #C0B7E8;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+    border: none;
+    color: #302c42;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.scroll-btn.left {
+    left: 10px;
+}
+
+.scroll-btn.right {
+    right: 10px;
+}
+
+.scroll-btn svg {
+    font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+    .scroll-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .part-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .parts-grid {
+        gap: 20px;
+    }
+}

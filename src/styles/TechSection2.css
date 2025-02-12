@@ -1,0 +1,66 @@
+.part-tech2-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.part-tech2-scrollable {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.part-tech2-scrollable.show-second {
+    transform: translateX(-100%);
+}
+
+.part-tech2-item {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.part-tech2-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.part-tech2-scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+    border: none;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.part-tech2-scroll-btn svg {
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .part-tech2-scroll-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
